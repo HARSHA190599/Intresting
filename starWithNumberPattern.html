@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TMaaS-TPMS</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+let temp = "", temp2="", count = 5, countReverse = 5;
+
+for (let i = 1; i <= 4 ; i++) {
+    for (let j = 1; j < 5; j++) {
+        let k = j;
+        if (count <= k ){
+            k = '*';
+        }
+    temp += k + " ";
+    }
+    for (let j = 3; j > 0; j--) {
+        let k = j;
+        if (countReverse <= k ){
+            k = "*";
+        }
+    temp2 += k + " ";
+    }
+	document.write(temp+temp2+'<br>');
+    console.log(temp+temp2);
+    temp = "";
+    temp2= "";
+    count--;
+    countReverse--;
+} 
+</script>
+</body>
+</html>
