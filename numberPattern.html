@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Number Pattern</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<script>
+let temp="", count = 1;
+let i = 1
+for (let j = 1; j < 5; j++) {
+    let k = j;
+    for (let i = 0; i < count ; i++) {
+        temp += k+i + " ";
+    } 
+    count++;
+	document.write(temp + '<br>');
+    console.log(temp);
+    temp= ""
+}
+</script>
+</body>
+</html>
